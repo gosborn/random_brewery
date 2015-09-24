@@ -5,7 +5,7 @@ class Beer < ActiveRestClient::Base
 
   
 
-  get :all, '/brewery/:brewery_id/beers?key=' + ENV["api_key"]
+  get :all, '/brewery/:brewery_id/beers?key=#{ENV["api_key"]}'
 
 
   def self.sample(beers)
