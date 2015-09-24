@@ -16,7 +16,7 @@
 !/log/.keep
 /tmp
 .idea/
-Gemfile.lock
+
 .idea/workspace.xml
 
 # Ignore application configuration
