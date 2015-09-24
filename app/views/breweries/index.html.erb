@@ -4,8 +4,8 @@
 
 <div id="beer-form">
   <%= form_for @brewery, remote: true do |f| %>
-  <%= f.hidden_field :latitude, value: @latitude %>
-  <%= f.hidden_field :longitude, value: @longitude %>
+  <%= f.hidden_field :latitude %>
+  <%= f.hidden_field :longitude %>
   <%= f.submit "Pour Me a Tall One", class: "btn btn-primary btn-lg", id: "submit" %>
   <% end %>
 </div>

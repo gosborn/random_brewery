@@ -2,8 +2,8 @@ class BreweriesController < ApplicationController
 
   def index
     @brewery = Brewery.new
-    @latitude = get_location["latitude"]
-    @longitude = get_location["longitude"]
+    # @latitude = get_location["latitude"]
+    # @longitude = get_location["longitude"]
   end
 
   def create
