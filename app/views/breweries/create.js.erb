@@ -6,7 +6,10 @@ var lng = <%= j @brewery.longitude.to_s %>;
 var start_lat = <%= j params[:brewery][:latitude] %>;
 var start_lng = <%= j params[:brewery][:longitude] %>;
 
-$('#submit').val("Pour Me Another One");
+$("#brewery_search_distance").val("<%= params[:brewery][:search_distance] %>")
+
+$("#beer-submit").show();
+$('#beer-submit').val("Pour Me Another One");
 $('h1').hide();
 
 var map = new GoogleMap();

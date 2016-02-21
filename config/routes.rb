@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   resources :breweries, only: [:index, :create]
 
+  post '/breweries/increase_radius' => 'breweries#increase_radius', :as => :increase_radius
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

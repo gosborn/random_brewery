@@ -11,11 +11,19 @@ h2 span{
   text-decoration: underline;
 }
 
-
-
-#submit{
+#beer-submit{
   margin: 0 auto;
   display: block;
+}
+
+form{
+  margin: 0 auto;
+ 
+}
+
+#beer-form {
+  background-color: blue;
+  margin: 0 auto;
 }
 
 #beer{

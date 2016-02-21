@@ -1,0 +1,6 @@
+var search = <%= params[:brewery][:search_distance] %>
+
+
+$("#beer").html('No breweries were found within ' + search + ' miles of your location. Try a larger search radius?');
+$("#beer").append("<%= j render partial: 'increase_radius' %>");
+$("#beer-submit").hide();

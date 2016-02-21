@@ -6,9 +6,15 @@
   <%= form_for @brewery, remote: true do |f| %>
   <%= f.hidden_field :latitude %>
   <%= f.hidden_field :longitude %>
-  <%= f.submit "Pour Me a Tall One", class: "btn btn-primary btn-lg", id: "submit" %>
+  <div id="distance">
+  <%= f.radio_button :search_distance, '10', :checked => true %> 10 mi
+  <%= f.radio_button :search_distance, '25' %> 25 mi
+  <%= f.radio_button :search_distance, '50' %> 50 mi
+  <%= f.radio_button :search_distance, '100' %> 100 mi
+  </div>
+
+  <%= f.submit "Pour Me a Tall One", class: "btn btn-primary btn-lg", id: "beer-submit" %>
   <% end %>
 </div>
-
 
 <div id="map-canvas" style="height:300px;width:960px;"></div>
