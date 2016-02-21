@@ -1,4 +1,4 @@
-et :stage, :production
+set :stage, :production
 set :branch, "master"
 
 # This is used in the Nginx VirtualHost to specify which domains
