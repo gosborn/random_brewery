@@ -5,7 +5,7 @@ class Brewery < ActiveRestClient::Base
 
   # get :all, '/search/geo/point?lat=:latitude&lng=:longitude&key=' + ENV["api_key"]
 
-  get :all, '/search/geo/point?lat=:latitude&lng=:longitude&radius=:search_distance&key=' + ENV["api_key"]
+  get :all, "/search/geo/point?lat=:latitude&lng=:longitude&radius=:search_distance&key=#{ENV["api_key"]}"
 
   attr_accessor :search_distance
 
