@@ -1,20 +1,39 @@
-<h1>Find a local beer!</h1>
-
-<div id="beer"></div>
+<div class='row'>
+  <div class="col-md-2"></div>
+  <div class="col-md-8"><h1>Find a local beer!</h1></div>
+  <div class="col-md-2"></div>
+</div>
+<div class='row'>
+  <div class="col-md-1"></div>
+  <div class="col-md-10"><div id="beer"></div></div>
+  <div class="col-md-1"></div>
+</div>
 
 <div id="beer-form">
   <%= form_for @brewery, remote: true do |f| %>
   <%= f.hidden_field :latitude %>
   <%= f.hidden_field :longitude %>
-  <div id="distance">
-  <%= f.radio_button :search_distance, '10', :checked => true %> 10 mi
-  <%= f.radio_button :search_distance, '25' %> 25 mi
-  <%= f.radio_button :search_distance, '50' %> 50 mi
-  <%= f.radio_button :search_distance, '100' %> 100 mi
-  </div>
-
+<div class='row'>
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+    <div id="distance">
+      <%= f.radio_button :search_distance, '10', :checked => true %> 10 mi
+      <%= f.radio_button :search_distance, '25' %> 25 mi
+      <%= f.radio_button :search_distance, '50' %> 50 mi
+      <%= f.radio_button :search_distance, '100' %> 100 mi
+      <br>
+      <br>
+      <br>
+    </div>
   <%= f.submit "Pour Me a Tall One", class: "btn btn-primary btn-lg", id: "beer-submit" %>
   <% end %>
+  </div>
+  <div class="col-md-4"></div>
 </div>
 
-<div id="map-canvas" style="height:300px;width:960px;"></div>
+<div class='row'>
+  <div class="col-md-1"></div>
+  <div class="col-md-10"><div id="map-canvas"></div></div>
+  <div class="col-md-1"></div>
+</div>
+

@@ -1,5 +1,5 @@
 h1 {
-  font-size: 42px;
+  font-size: 4.5em;
   text-align: center;
 }
 
@@ -22,7 +22,6 @@ form{
 }
 
 #beer-form {
-  background-color: blue;
   margin: 0 auto;
 }
 
@@ -32,6 +31,10 @@ form{
 
 #map-canvas{
   margin: 40px auto 0px;
-  height: 300px;
-  width: 960px;
+  height: 400px;
+  width: 100%;
+}
+
+#distance{
+    text-align:center;
 }
