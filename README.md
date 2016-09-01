@@ -1,6 +1,6 @@
 #Random Beer Generator
 
-Try it out at [Drink a Local Beer](www.drinkalocalbeer.com).
+Try it out at [Drink a Local Beer](http://www.drinkalocalbeer.com).
 
 Utilizes ActiveRestClient(https://github.com/whichdigital/active-rest-client) to access beer data from [BreweryDB](http://www.brewerydb.com/). ActiveRestClient allows the API Response to be treated in an ActiveRecord style. Accordingly, this app does not use a database, every new request for a beer hits BreweryDB. 
 
